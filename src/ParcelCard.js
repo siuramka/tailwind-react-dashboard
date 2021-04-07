@@ -1,8 +1,9 @@
+import {useState} from 'react'
 const ParcelCard = ({data}) => {
 
     const {ID, customerName, customerID, companyName, companyOrderID, deliveryType, deliveryInfo,orderStatus,statusStatus,
     lastUpdate,deliveryStatus,hasProblems} = data;
-    
+
     return (
         <div className="parcel-thumb" key={ID}>
             <div className="pl-6 pr-6 pt-6">
@@ -53,7 +54,7 @@ const ParcelCard = ({data}) => {
                             </div>
                             <div className="w-1/6 flex items-center justify-center">
                                 <div className="font-semibold bg-red-600 rounded-md text-white p-1 px-3">
-                                    Canceled
+                                In Transit
                                 </div>
                             </div>
                             <div className="w-11 flex items-center justify-center ">
